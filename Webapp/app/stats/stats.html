@@ -1,0 +1,45 @@
+<div layout="row">
+    <div flex="20">
+        <p>Character     Importance </p>
+        <div ng-repeat="item in stats.importance | orderBy: '-importance'">
+            <p> {{item.id}}      {{item.importance}}</p>
+        </div>
+    </div>
+    <div flex="20">
+        <p>Character    Page Count </p>
+        <div ng-repeat="item in stats.pagerank | orderBy: '-pagerank'">
+            <p ng-if="item.pagerank!=0"> {{item.id}}     {{item.pagerank}}</p>
+        </div>
+    </div>
+    <div flex="20">
+            <p> Graph Stats</p>
+            <p> size: {{stats.graph_stats.size}} </p>
+             <p> connectivity: {{stats.graph_stats.connectivity}} </p>
+              <p> transitivity: {{stats.graph_stats.transitivity}} </p>
+               <p> density: {{stats.graph_stats.density}} </p>
+               <p> diameter: {{stats.graph_stats.diameter}}</p>
+    </div>
+    <div flex="20">
+        <p>The following characters are central: </p>
+        <div ng-repeat="item in stats.central">
+            <p>{{item.node}}</p>
+        </div>
+        <p> The following Characters are peripheral: </p>
+        <div ng-repeat="item in stats.peripheral">
+            <p>{{item.node}}</p>
+            </div>
+       </div>
+    <div flex="20">
+
+        <div ng-repeat="item in stats.cliques">
+            <p>Clique</p>
+            <div ng-repeat="(k,v) in item">
+
+                <p>{{k}}  {{v}}</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+   

@@ -1,0 +1,15 @@
+﻿<!--<md-button class="md-primary"/>Home</md-button><md-button class="md-primary" />Graphs</md-button> <md-button class="md-primary" />Stats</md-button>-->
+<span ng-repeat="item in graph.groups">
+    <md-checkbox class="blue" ng-checked="graph.type(item)" data-ng-click="graph.changes(item)"/>
+    {{item}}
+    </md-checkbox>
+</span>
+<form>
+    <input type="button" class="button" value="Betweeness" ng-click="graph.change('Inbetweeness')"> 
+    <input type="button" class="button" value="Degree" ng-click="graph.change('Degree')"> 
+    <input type="button" class="button" value="Eigenvector" ng-click="graph.change('Eigenvector')"> 
+    <input type="button" class="button" value="Closeness" ng-click="graph.change('Closeness')">
+    <input type="button" class="button" value="Harmonic" ng-click="graph.change('Harmonic')">
+    <input type="button" class="button" value="Communicability" ng-click="graph.change('Communicability')">
+</form>
+<svg width="960" height="960" class="graph" flex></svg>

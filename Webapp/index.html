@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="app" lang="eg">
+<head>
+    <meta charset='utf-8' />
+    <title>Novel Networks</title>
+    <base href="/">
+
+    <!--CSS Stylesheets below -->
+    <link rel="stylesheet" href="Styles/style.css" />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+</head>
+<body ng-app="app" layout="column">
+
+    <md-toolbar>
+        <h1 ui-sref="graph">Novel Networks</h1>
+    </md-toolbar>
+    <div class="container" layout="row" flex>
+        <md-sidenav md-is-locked-open="true" class="md-whiteframe-4dp" style="background-color:#106CC8">
+            <md-list flex>
+                <md-subheader class="md-no-sticky">Graph</md-subheader>
+                <md-list-item ng-click="null" ui-sref="graph">
+                    <div class="md-list-item-text">
+                        Dynamic Graph
+                    </div>
+                </md-list-item>
+                <md-list-item ng-click="null" ui-sref="stats">
+                    <div class="md-list-item-text">
+                        Static Graph
+                    </div>
+
+                </md-list-item>
+                <md-list-item ng-click="null" ui-sref="graph">
+                    <div class="md-list-item-text">
+                        Centralities
+                    </div>
+
+                </md-list-item>
+                <md-list-item ng-click="null" ui-sref="stats">
+                    <div class="md-list-item-text">
+                        Download Graph
+                    </div>
+                </md-list-item>
+                <md-list-item ng-click="null" ui-sref="core">
+                    <div class="md-list-item-text">
+                        Core and Degree Numbers
+                    </div>
+                </md-list-item>
+            </md-list>
+            <md-list flex>
+                <md-subheader class="md-no-sticky">Stats</md-subheader>
+                <md-list-item ng-click="null" ui-sref="importance">
+                    <div class="md-list-item-text">
+                        Character Importance
+                    </div>
+                </md-list-item>
+                <md-list-item ng-click="null" ui-sref="pagecount">
+                    <div class="md-list-item-text">
+                        Character Page Count
+                    </div>
+                </md-list-item>
+                <md-list-item ng-click="null" ui-sref="graph">
+                    <div class="md-list-item-text">
+                        Central Character
+                    </div>
+                </md-list-item>
+                <md-list-item ng-click="null" ui-sref="cliques">
+                    <div class="md-list-item-text">
+                        Cliques
+                    </div>
+                </md-list-item>
+                <md-list-item ng-click="null" ui-sref="graph">
+                    <div class="md-list-item-text">
+                        Graph Stats
+                    </div>
+                </md-list-item>
+            </md-list>
+            <md-list flex>
+                <md-subheader class="md-no-sticky">Other</md-subheader>
+                <md-list-item ng-click="null" ui-sref="graph">
+                    <div class="md-list-item-text">
+                        About
+                    </div>
+                </md-list-item>
+            </md-list>
+        </md-sidenav>
+        <md-content id="content" class="lightgreen" flex><div layout="column" ui-view style="height: 100%"></div></md-content>
+    </div>
+    <!--Core Scripts below -->
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-animate.js"></script>
+    <script src="Scripts/angular-aria.min.js"></script>
+    <script src="Scripts/angular-ui-router.js"></script>
+    <script src="Scripts/angular-css.min.js"></script>
+    <script src="Scripts/angular-cookies.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
+    <script src="Scripts/angular-messages.min.js"></script>
+    <script src="Scripts/angular-material.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!--App scripts-->
+    <script src="app.module.js"></script>
+    <script src="app.route.js"></script>
+    <script src="app.run.js"></script>
+    <script src="storage.factory.js"></script>
+
+    <script src="app/home/app.home.js"></script>
+    <script src="app/graph/app.graph.js"></script>
+    <script src="app/stats/app.stats.js"></script>
+    <script src="app/core/app.core.js"></script>
+
+    <script src="app/importance/app.importance.js"></script>
+    <script src="app/page_count/app.page_count.js"</script>
+    <script src="app/cliques/cliques.js"</script>
+</body>
+</html>

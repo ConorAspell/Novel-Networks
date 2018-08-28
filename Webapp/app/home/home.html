@@ -1,0 +1,13 @@
+{{home.title}}
+
+<form ng-submit="home.upload()">
+    <input type="file" name="file" onchange="angular.element(this).scope().home.uploadTxtFile(this.files)" /><br />
+    <input type="file" name="character" onchange="angular.element(this).scope().home.uploadCharFile(this.files)" /><br />
+    <input type="text" ng-model = "home.Integer" name="N" />
+    <input type="submit" value="Upload" />
+    <input type= "radio" ng-model= "home.thing" value ="Paragraphs"/>Paragraphs
+    <input type="radio" ng-model = "home.thing" value="Sentences"/>Sentences
+    <input type="radio" ng-model = "home.thing" value="Words"/>Words
+</form>
+<p ng-bind="home.Integer"></p>
+<p ng-bind="thing"></p>

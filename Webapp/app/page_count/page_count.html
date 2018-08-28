@@ -1,0 +1,6 @@
+﻿<div flex="20">
+    <p>Character    Page Count </p>
+    <div ng-repeat="item in pagecount.pagerank | orderBy: '-pagerank'">
+        <p ng-if="item.pagerank!=0"> {{item.id}}     {{item.pagerank}}</p>
+    </div>
+</div>

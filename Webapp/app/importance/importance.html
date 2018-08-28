@@ -1,0 +1,9 @@
+﻿<svg width="1200" height="500" class="barchart"></svg>
+<div layout="row">
+    <div flex="20">
+        <p>Character     Importance </p>
+        <div ng-repeat="item in importance.importance | orderBy: '-importance'">
+            <p> {{item.id}}      {{item.importance}}</p>
+        </div>
+    </div>
+</div>

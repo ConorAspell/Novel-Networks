@@ -1,0 +1,75 @@
+.md-subheader .md-subheader-inner{
+    background-color: #267ED5;
+}
+
+.md-list-item-text{
+    color: #fff;
+    font-size: 16px;
+}
+
+.md-toolbar{
+    font-size: 18px;
+    color: #fff;
+}
+md-list .md-subheader .md-subheader-inner{
+    font-size: 18px;
+font-weight: 500;
+letter-spacing: .01em;
+line-height: 1.2em;
+color: white;
+}
+
+.md-subheader.md-default-theme, .md-subheader {
+    color: rgba(0,0,0,0.54);
+}
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.button {
+    background-color:  #008CBA; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+	min-width: 135px;
+	margin-bottom: 10px;
+	cursor:pointer;
+}
+
+.md-button {
+    background-color: darkblue; /* Green */
+    border: blue;
+    color: blue;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+	min-width: 135px;
+
+	margin-bottom: 10px;
+	cursor:pointer;
+}
+
+.md-button:not([disabled]):hover {
+  background-color: lightblue;
+}
+
+.md-button[disabled] {
+  color : blue;
+  background-color: darkblue;
+}
+
+md-checkbox.md-checked.blue .md-icon{
+    background-color: royalblue;
+}
