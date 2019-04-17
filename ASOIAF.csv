@@ -1,12 +1,12 @@
 Name,Nickname,Group
 Eddard,Ned,North
-Catelyn,,North
-Robb,,North
-Sansa,,North
-Arya,'Arry,North
-Bran,,North
+Catelyn,,Stark
+Robb,,Stark
+Sansa,,Stark
+Arya,'Arry,Stark
+Bran,,Stark
 Rickon,,North
-Jon,Snow,North
+Jon,Snow,Stark
 Qhorin,Halfhand,North
 Orell,,North
 Shae,,Crownlands
@@ -24,7 +24,6 @@ Meera,,North
 Jeyne,,North
 Daenerys,Dany,Essos
 Irri,,Essos
-Viserys,,Essos
 Jon Arryn,,Crownlands 
 Jorah,,Essos
 Brynden,Bloodraven,North
@@ -74,7 +73,6 @@ Arianne,,Dorne
 Quentyn,,Dorne
 Trystane,,Dorne
 Oberyn,,Dorne
-Ellaria,,Dorne
 Areo,,Dorne
 Hoster,,Riverlands
 Edmure,,Riverlands
@@ -85,10 +83,46 @@ Loras,,Reach
 Margaery,,Reach
 Olenna,,Reach
 Randyll,,Reach
-Jeor,,North
 Aemon,,North
 Yoren,,North
 Samwell,Sam,North
 Janos,,Crownlands
 Alliser,,North
 Mance,,North
+Craster,,North
+Grenn,,North
+Pyp,,North
+Gilly,,North
+Hizdahr,,Essos
+Ludwin,,North
+Ilyn,,Crownlands
+Petyr,Little Finger,Crownlands
+Lyanna,,North
+Xaro,,Essos
+Dolorous Edd,,North
+Drogo,,Essos
+Meryn,,Crownlands
+Doreah,,Crownlands
+Pycelle,,Crownlands
+Qyburn,,Crownlands
+Lady Crane,,North
+Lollys,,Crownlands
+Bowen,,North
+Nan,,North
+Val,,North
+Dalla,,North
+Styr,,North
+Karl,,North
+Salladhor,,North
+Illyrio,,Essos
+Rakhoro,,Essos
+Chataya,,Crownlands
+Hot Pie,,Riverlands
+Jaqen,,Riverlands
+Jory,,North
+Thoros,,Riverlands
+Lem,,Riverlands
+Lady Smallwood,,Riverlands
+Moon Boy,,Crownlands
+Dontos,,Crownlands
+Polliver,,Riverlands
